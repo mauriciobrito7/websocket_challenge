@@ -1,0 +1,15 @@
+<h1>Vista Socket</h1>
+<h2>Lista de productos</h2>
+{{#if products.length}}
+<ul>
+{{#each products}}
+ <li>
+  {{title}} - {{price}}
+ </li>
+{{/each}}
+</ul>
+{{else}}
+<h2>NO HAY PRODUCTOS</h2>
+{{/if}}
+<script src="/socket.io/socket.io.js"></script>
+<script src="/index.js"></script>

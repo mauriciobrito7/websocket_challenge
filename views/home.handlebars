@@ -1,0 +1,13 @@
+<h1>Vista http</h1>
+<h2>Lista de productos</h2>
+{{#if products.length}}
+<ul>
+{{#each products}}
+ <li>
+  {{title}} - {{price}}
+ </li>
+{{/each}}
+</ul>
+{{else}}
+<h2>NO HAY PRODUCTOS</h2>
+{{/if}}
